@@ -1,12 +1,13 @@
 # Python-Import-Analyzer
 
-A powerful tool for visualizing and analyzing import dependencies in Python projects. This tool helps you understand the structure of your Python codebase by creating interactive and static visualizations of module dependencies.
+![Python Import Dependency Analyzer Dashboard](./assets/dashboard.png)
+
+A visualization tool for analyzing import dependencies in Python projects. This tool helps you understand the structure of your Python codebase by creating interactive and static visualizations of module dependencies.
 
 ## Features
 
 - **Interactive Dash Dashboard**: Explore your project dependencies through a full-featured web interface
 - **Static and Interactive Visualizations**: Generate both matplotlib static images and plotly interactive graphs
-- **2D and 3D Visualizations**: Choose between 2D and 3D interactive dependency graphs
 - **Entry Point Analysis**: Identify required and potentially unused modules based on a specified entry point
 - **Dependency Metrics**: Get insights about imports, module relationships, and dependency chains
 - **Flexible Integration**: Use as a standalone tool or integrate into your development workflow
@@ -175,6 +176,42 @@ fig.write_html('dependency_graph.html')
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Publishing to PyPI
+
+To publish this package to PyPI, follow these steps:
+
+1. Ensure you have the necessary tools installed:
+   ```bash
+   pip install build twine
+   ```
+
+2. Update the version number in `setup.py` and `python_import_analyzer/__init__.py`.
+
+3. Build the distribution packages:
+   ```bash
+   python -m build
+   ```
+   This creates both a source distribution and a wheel in the `dist/` directory.
+
+4. Upload to TestPyPI first to verify everything works:
+   ```bash
+   python -m twine upload --repository testpypi dist/*
+   ```
+   Test the installation with:
+   ```bash
+   pip install --index-url https://test.pypi.org/simple/ python-import-analyzer
+   ```
+
+5. Upload to the real PyPI:
+   ```bash
+   python -m twine upload dist/*
+   ```
+
+6. Users can now install your package with:
+   ```bash
+   pip install python-import-analyzer
+   ```
 
 ## License
 

@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+include PUBLISHING.md
+recursive-include python_import_analyzer/assets *
