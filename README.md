@@ -21,16 +21,28 @@ A visualization tool for analyzing import dependencies in Python projects. This 
 
 ### Setup
 
-1. Clone the repository:
+1. Install with:
+   ```bash
+   pip install python-import-analyzer
+   ```
+
+OR
+
+2. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/Python-Import-Analyzer.git
    cd Python-Import-Analyzer
    ```
 
-2. Install dependencies:
+ Then, install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+
+## Run with
+```bash
+   import-analyzer
+```
 
 ## Interactive Dashboard Usage
 
@@ -175,43 +187,7 @@ fig.write_html('dependency_graph.html')
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Publishing to PyPI
-
-To publish this package to PyPI, follow these steps:
-
-1. Ensure you have the necessary tools installed:
-   ```bash
-   pip install build twine
-   ```
-
-2. Update the version number in `setup.py` and `python_import_analyzer/__init__.py`.
-
-3. Build the distribution packages:
-   ```bash
-   python -m build
-   ```
-   This creates both a source distribution and a wheel in the `dist/` directory.
-
-4. Upload to TestPyPI first to verify everything works:
-   ```bash
-   python -m twine upload --repository testpypi dist/*
-   ```
-   Test the installation with:
-   ```bash
-   pip install --index-url https://test.pypi.org/simple/ python-import-analyzer
-   ```
-
-5. Upload to the real PyPI:
-   ```bash
-   python -m twine upload dist/*
-   ```
-
-6. Users can now install your package with:
-   ```bash
-   pip install python-import-analyzer
-   ```
+Contributions are welcome! Please feel free to submit a Pull Request. Note that this is not actively maintained.
 
 ## License
 

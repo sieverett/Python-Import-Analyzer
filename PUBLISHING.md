@@ -69,7 +69,13 @@ It's a good practice to first upload to TestPyPI to verify the package works cor
    ```bash
    python -m venv test_env
    source test_env/bin/activate  # On Windows: test_env\Scripts\activate
+   pip install --index-url https://test.pypi.org/simple/ python-import-analyzer
+   ```
+
+   If you need to avoid installing dependencies from TestPyPI (recommended), use:
+   ```bash
    pip install --index-url https://test.pypi.org/simple/ --no-deps python-import-analyzer
+   pip install networkx matplotlib plotly dash dash-cytoscape pandas
    ```
 
 3. Verify the package works:

@@ -5,15 +5,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="python-import-analyzer",
-    version="0.1.0",
+    version="0.1.2",
     author="Weavery",
-    author_email="your.email@example.com",
+    author_email="silas@eweavery.ai",
     description="A tool for visualizing and analyzing import dependencies in Python projects",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/Python-Import-Analyzer",
+    url="https://github.com/sieverett/Python-Import-Analyzer",  # Homepage URL
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/Python-Import-Analyzer/issues",
+        "Bug Tracker": "https://github.com/sieverett/Python-Import-Analyzer/issues",
+        "Documentation": "https://github.com/sieverett/Python-Import-Analyzer/blob/main/README.md",
+        "Source Code": "https://github.com/sieverett/Python-Import-Analyzer",
     },
     classifiers=[
         "Programming Language :: Python :: 3",

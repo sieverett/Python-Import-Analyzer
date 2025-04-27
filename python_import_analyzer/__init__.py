@@ -4,7 +4,7 @@ Python Import Analyzer
 A tool for visualizing and analyzing import dependencies in Python projects.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"  # Update version number here
 
 from .dependency_analyzer import (
     analyze_dependencies,
